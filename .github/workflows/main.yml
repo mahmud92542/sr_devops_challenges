@@ -41,7 +41,7 @@ jobs:
             rm -rf *
 
             # Copy the build files from GitHub Actions runner to EC2
-            scp -r /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/* /home/ubuntu/devops-assessment
+            scp -r /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/. /home/ubuntu/devops-assessment/.
             ls -alt
             
             # Start the Next.js application managed by PM2
