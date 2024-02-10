@@ -23,6 +23,7 @@ jobs:
         run: |
           cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main
           npm run build
+          ls -alt
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
