@@ -26,7 +26,7 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd devops-assessment
+          cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main
           pm2 stop nextjs
           cp -R * /home/ubuntu/devops-assessment
           pm2 start nextjs
