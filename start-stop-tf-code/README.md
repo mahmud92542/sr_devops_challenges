@@ -3,6 +3,9 @@
 
 This repository contains Terraform code and a Python Lambda function to automate the start and stop operations of EC2 and RDS instances on AWS. The automation is triggered by EventBridge rules, which are scheduled to run every Monday to Friday at 8 AM and 8 PM respectively.
 
+![diagram](https://github.com/mahmud92542/sr_devops_challenges/assets/34007876/78c5c7a6-b121-4e09-a3ee-5c1548b09995)
+
+
 ## Prerequisites
 
 Before getting started, ensure you have the following:
