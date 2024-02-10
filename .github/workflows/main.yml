@@ -44,7 +44,7 @@ jobs:
             pwd && ls
             cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/
             ls
-            scp -r /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/.next/* /home/ubuntu/devops-assessment/.
+            scp -r runner@github.com:/home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/.next/* /home/ubuntu/devops-assessment/.
             ls -alt
             
             # Start the Next.js application managed by PM2
