@@ -27,6 +27,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main
+          ls -alt
           pm2 stop nextjs
           cp -R * /home/ubuntu/devops-assessment
           pm2 start nextjs
