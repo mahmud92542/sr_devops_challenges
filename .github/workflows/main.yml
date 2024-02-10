@@ -41,6 +41,9 @@ jobs:
             rm -rf *
 
             # Copy the build files from GitHub Actions runner to EC2
+            pwd && ls
+            cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/
+            ls
             scp -r /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/.next/* /home/ubuntu/devops-assessment/.
             ls -alt
             
