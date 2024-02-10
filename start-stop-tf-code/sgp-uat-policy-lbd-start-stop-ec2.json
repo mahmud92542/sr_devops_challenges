@@ -1,0 +1,30 @@
+{
+  "Statement": [
+      {
+          "Action": [
+              "logs:CreateLogGroup",
+              "logs:CreateLogStream",
+              "logs:PutLogEvents"
+          ],
+          "Effect": "Allow",
+          "Resource": "arn:aws:logs:*:*:*"
+      },
+      {
+          "Action": [
+              "ec2:Start*",
+              "ec2:Stop*"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      },
+      {
+          "Action": [
+              "rds:StartDBInstance",
+              "rds:StopDBInstance"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      }
+  ],
+  "Version": "2012-10-17"
+}
