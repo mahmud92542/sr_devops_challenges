@@ -10,25 +10,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main && npm install && npm install next
-
-    - name: Build Next.js application
-      run: cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main && npm run build
-
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ${{ secrets.EC2_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
+      - name: Install dependencies
+        run: |
           cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main
-          ls -alt
-          pm2 stop nextjs
-          cp -R * /home/ubuntu/devops-assessment
-          pm2 start nextjs
-          sudo systemctl restart nginx
+          npm install
+          npm install next
+
+      - name: Build Next.js application
+        run: |
+          cd /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main
+          npm run build
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/ubuntu/devops-assessment
+            ls -alt
+
+            # Stop the Next.js application managed by PM2
+            pm2 stop nextjs
+
+            # Remove all old files in the deployment directory
+            rm -rf *
+
+            # Copy the build files from GitHub Actions runner to EC2
+            cp -R /home/runner/work/sr_devops_challenges/sr_devops_challenges/devops-assessment-main/. ./
+
+            # Start the Next.js application managed by PM2
+            pm2 start nextjs
+
+            # Restart or reload Nginx
+            sudo systemctl restart nginx
