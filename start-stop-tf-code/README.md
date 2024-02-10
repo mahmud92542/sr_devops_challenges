@@ -1,3 +1,5 @@
+![diagram](https://github.com/mahmud92542/sr_devops_challenges/assets/34007876/147d4279-e0e3-4054-9fc9-743446f71c80)
+
 ```markdown
 # Automating EC2 and RDS Instance Start/Stop with EventBridge and Lambda
 
