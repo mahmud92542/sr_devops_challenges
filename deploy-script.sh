@@ -10,4 +10,3 @@ npm install nextjs
 npm run build
 pm2 start npm --name "nextjs-app" -- start -- -p 3000
 sudo systemctl reload nginx
-
