@@ -8,5 +8,5 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 npm install nextjs
 npm run build
-pm2 start npm --name "nextjs-app" -- start -- -p 3000
+pm2 start npm --name "nextjs" -- start -- -p 3000
 sudo systemctl reload nginx
