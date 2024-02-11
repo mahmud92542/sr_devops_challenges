@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Commands to execute
-pm2 stop nextjs-app
+pm2 stop nextjs
 rm -rf /home/ubuntu/devops-assessment/*
 sudo mv /home/ubuntu/devops-assessment-main/ /home/ubuntu/devops-assessment/
 sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
