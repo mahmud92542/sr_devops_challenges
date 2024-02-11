@@ -7,7 +7,7 @@ pm2 delete nextjs
 rm -rf /home/ubuntu/devops-assessment/*
 
 # Move the contents of /home/ubuntu/devops-assessment-main/ to /home/ubuntu/devops-assessment/
-sudo mv /home/ubuntu/devops-assessment-main/* /home/ubuntu/devops-assessment/
+sudo mv /home/ubuntu/devops-assessment-main/ /home/ubuntu/devops-assessment/
 
 # Change ownership of /home/ubuntu/devops-assessment/ to the "ubuntu" user and group
 sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
