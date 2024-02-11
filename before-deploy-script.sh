@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo chmod +x before-deploy-script.sh
 # Stop the "nextjs" process managed by PM2
 pm2 delete nextjs
 
