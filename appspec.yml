@@ -5,6 +5,6 @@ files:
     destination: /home/ubuntu/devops-assessment
 hooks:
   AfterInstall:
-    - location: /home/ubuntu/deploy-script.sh
+    - location: /home/ubuntu/devops-assessment/deploy-script.sh
       runas: ubuntu
       timeout: 1800
