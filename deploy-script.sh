@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Stop the "nextjs" process managed by PM2
-pm2 stop nextjs
+pm2 delete nextjs
 
 # Remove all files and folders inside /home/ubuntu/devops-assessment/
 rm -rf /home/ubuntu/devops-assessment/*
