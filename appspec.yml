@@ -1,9 +1,15 @@
----
 version: 0
 os: linux
 files:
   - source: /
     destination: /home/ubuntu
+    permissions:
+      - object: script
+        pattern: before-deploy-script.sh
+        mode: "0755"
+      - object: script
+        pattern: deploy-script.sh
+        mode: "0755"
 hooks:
   AfterInstall:
     - location: before-deploy-script.sh
