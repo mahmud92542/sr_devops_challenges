@@ -5,11 +5,11 @@ files:
   - source: /
     destination: /home/ubuntu
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: before-deploy-script.sh
       runas: ubuntu
       timeout: 1800
-  AfterInstall:
+  ApplicationStart:
     - location: deploy-script.sh
       runas: ubuntu
       timeout: 1800
