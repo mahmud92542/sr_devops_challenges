@@ -15,6 +15,9 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 # Change directory to /home/ubuntu/devops-assessment/devops-assessment-main/
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 
+# Install pm2 globally
+npm install pm2@latest -g
+
 # Install project dependencies
 npm install nextjs
 
