@@ -6,6 +6,8 @@ pm2 stop nextjs
 # Remove all files and folders inside /home/ubuntu/devops-assessment/
 rm -rf /home/ubuntu/devops-assessment/*
 
+sudo mv /home/ubuntu/devops-assessment-main/ /home/ubuntu/devops-assessment/
+
 # Move the contents of /home/ubuntu/devops-assessment-main/ to /home/ubuntu/devops-assessment/
 sudo mv /home/ubuntu/devops-assessment-main/* /home/ubuntu/devops-assessment/
 
@@ -15,10 +17,6 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 # Change directory to /home/ubuntu/devops-assessment/devops-assessment-main/
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 
-# Install pm2 globally
-npm install pm2@latest -g
-
-# Install project dependencies
 npm install nextjs
 
 # Build the project
