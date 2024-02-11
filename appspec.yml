@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/devops-assessment
 hooks:
   AfterInstall:
-    - location: /bin/bash
+    - location: /home/ubuntu/devops-assessment
       runas: ubuntu
       timeout: 1800
       commands:
