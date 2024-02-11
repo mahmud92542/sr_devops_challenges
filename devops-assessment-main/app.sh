@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/ubuntu/devops-assessment/devops-assessment-main/
+
 # Add echo commands to check script execution line by line
 echo "Running npm install..."
 npm install
