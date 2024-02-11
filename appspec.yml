@@ -12,10 +12,6 @@ files:
         mode: "0755"
 hooks:
   AfterInstall:
-    - location: before-deploy-script.sh
-      runas: ubuntu
-      timeout: 1800
-  ApplicationStart:
     - location: deploy-script.sh
       runas: ubuntu
       timeout: 1800
