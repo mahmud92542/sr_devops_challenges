@@ -16,7 +16,7 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 
 # Install project dependencies
-npm install
+npm install nextjs
 
 # Build the project
 npm run build
