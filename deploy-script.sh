@@ -15,17 +15,5 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 # Change directory to /home/ubuntu/devops-assessment/devops-assessment-main/
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 
-sudo npm install
-
-sudo npm install -g pm2
-
-sudo npm install nextjs
-
-# Build the project
-sudo npm run build
-
-# Start the "nextjs" process managed by PM2
-sudo pm2 start npm --name "nextjs" -- start -- -p 3000
-
-# Reload NGINX
-sudo systemctl reload nginx
+sudo chmod +x app.sh
+./app.sh
