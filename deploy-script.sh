@@ -15,5 +15,5 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/devops-assessment
 # Change directory to /home/ubuntu/devops-assessment/devops-assessment-main/
 cd /home/ubuntu/devops-assessment/devops-assessment-main/
 
-sudo chmod +x app.sh
+chmod +x app.sh
 ./app.sh
