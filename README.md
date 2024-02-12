@@ -1,7 +1,20 @@
-![Screenshot 2024-02-12 at 11 23 42 AM](https://github.com/mahmud92542/sr_devops_challenges/assets/34007876/1cd25344-6d6c-4b40-b9db-b434e2a1b358)
+**This repository holds two key components:**
 
+**1. devops-assessment-main** </br>
+**2. start-stop-tf-code**
+
+✨ <h2> DevOps Assesment NextJs application </h2> ✨
+
+For comprehensive details, please refer to the dedicated [README](start-stop-tf-code) within this folder.
+
+✨ <h2> Start & Stop EC2 & RDS via Lambda on schedule </h2> ✨
+
+For in-depth information, please refer to the dedicated [README](devops-assessment-main) within this folder.
 
 # CI/CD Pipeline with CodePipeline and CodeDeploy for Automatic Deployment on EC2
+
+![Screenshot 2024-02-12 at 11 23 42 AM](https://github.com/mahmud92542/sr_devops_challenges/assets/34007876/1cd25344-6d6c-4b40-b9db-b434e2a1b358)
+
 
 This repository contains configurations and scripts to set up a Continuous Integration and Continuous Deployment (CI/CD) pipeline using AWS services like CodePipeline and CodeDeploy. The pipeline automatically deploys changes to an application hosted on EC2 instances whenever a developer pushes code changes to specific branches on GitHub.
 
