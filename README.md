@@ -1,3 +1,6 @@
+![Screenshot 2024-02-12 at 11 23 42 AM](https://github.com/mahmud92542/sr_devops_challenges/assets/34007876/1cd25344-6d6c-4b40-b9db-b434e2a1b358)
+
+
 # CI/CD Pipeline with CodePipeline and CodeDeploy for Automatic Deployment on EC2
 
 This repository contains configurations and scripts to set up a Continuous Integration and Continuous Deployment (CI/CD) pipeline using AWS services like CodePipeline and CodeDeploy. The pipeline automatically deploys changes to an application hosted on EC2 instances whenever a developer pushes code changes to specific branches on GitHub.
