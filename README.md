@@ -3,13 +3,14 @@
 **1. devops-assessment-main** </br>
 **2. start-stop-tf-code**
 
-✨ <h2> DevOps Assesment NextJs application </h2> ✨
-
-For comprehensive details, please refer to the dedicated [README](start-stop-tf-code) within this folder.
-
 ✨ <h2> Start & Stop EC2 & RDS via Lambda on schedule </h2> ✨
 
-For in-depth information, please refer to the dedicated [README](devops-assessment-main) within this folder.
+For in-depth information, please refer to the dedicated [README](start-stop-tf-code) within this folder.
+
+✨ <h2> DevOps Assesment NextJs application </h2> ✨
+
+For comprehensive details, please refer to the dedicated [README](devops-assessment-main) within this folder.
+
 
 # CI/CD Pipeline with CodePipeline and CodeDeploy for Automatic Deployment on EC2
 
